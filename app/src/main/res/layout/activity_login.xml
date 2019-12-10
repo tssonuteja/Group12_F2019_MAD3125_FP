@@ -18,6 +18,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:contentPadding="10dp">
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+
+        </LinearLayout>
+
     </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
