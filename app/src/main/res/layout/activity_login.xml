@@ -57,9 +57,18 @@
                     android:textSize="14sp"/>
             </androidx.cardview.widget.CardView>
 
-
-
-
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_login"
+                android:background="#2196F3"
+                android:text="Login"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:layout_marginTop="20dp"
+                android:onClick="loginClicked" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
