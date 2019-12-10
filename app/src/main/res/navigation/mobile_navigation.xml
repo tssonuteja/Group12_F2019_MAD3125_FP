@@ -37,7 +37,7 @@
 
     <fragment
         android:id="@+id/nav_send"
-        android:name="com.example.group12_f2019_mad3125_fp.ui.send.SendFragment"
+        android:name="com.example.group12_f2019_mad3125_fp.ui.listPayroll.SendFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_send" />
 </navigation>
