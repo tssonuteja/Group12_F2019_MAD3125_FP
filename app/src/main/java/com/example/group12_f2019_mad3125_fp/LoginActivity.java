@@ -43,6 +43,12 @@ public class LoginActivity extends AppCompatActivity {
             finish();
 
         }
+
+        if(userName.isEmpty() && userPassword.equals("s3cr3t")){
+            Email.setError("EmaiID is Empty");
+        }
+
+       
     }
 }
 
