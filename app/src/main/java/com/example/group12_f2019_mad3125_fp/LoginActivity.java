@@ -48,7 +48,9 @@ public class LoginActivity extends AppCompatActivity {
             Email.setError("EmaiID is Empty");
         }
 
-       
+        else if(userName.equals("user@employee.com") && userPassword.isEmpty()){
+            Password.setError("Password Field is Empty");
+        }
     }
 }
 
