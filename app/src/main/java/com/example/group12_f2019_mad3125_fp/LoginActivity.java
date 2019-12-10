@@ -51,6 +51,10 @@ public class LoginActivity extends AppCompatActivity {
         else if(userName.equals("user@employee.com") && userPassword.isEmpty()){
             Password.setError("Password Field is Empty");
         }
+
+        else if(userName.equals("user@employee.com") && userPassword!="s3cr3t"){
+            Password.setError("Invalid Password");
+        }
     }
 }
 
