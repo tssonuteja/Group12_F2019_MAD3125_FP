@@ -2,6 +2,7 @@ package com.example.group12_f2019_mad3125_fp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,10 +27,22 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                validate(Email.getText().toString(), Password.getText().toString());
+
             }
 
-
         });
+    }
+
+    private void validate(String userName, String userPassword){
+
+        if ((userName.equals("user@employee.com")) && (userPassword.equals("s3cr3t"))){
+
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+
+        }
     }
 }
 
