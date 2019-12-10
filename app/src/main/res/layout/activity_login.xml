@@ -68,7 +68,7 @@
                 android:paddingStart="50dp"
                 android:paddingEnd="50dp"
                 android:layout_marginTop="20dp"
-                android:onClick="loginClicked" />
+                 />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

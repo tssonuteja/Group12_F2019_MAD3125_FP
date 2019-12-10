@@ -45,15 +45,30 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         if(userName.isEmpty() && userPassword.equals("s3cr3t")){
-            Email.setError("EmaiID is Empty");
+            Email.setError("EmailID is Empty");
         }
 
         else if(userName.equals("user@employee.com") && userPassword.isEmpty()){
-            Password.setError("Password Field is Empty");
+            Password.setError("Password is Empty");
         }
 
         else if(userName.equals("user@employee.com") && userPassword!="s3cr3t"){
             Password.setError("Invalid Password");
+        }
+
+        else if(userName!="user@employee.com"&& userPassword.equals("s3cr3t")){
+            Email.setError("Invalid Password");
+        }
+
+        else if(userName!="user@employee.com" || userPassword!="s3cr3t"){
+
+            Email.setError("Invalid EmailID");
+            Password.setError("Invalid Password");
+        }
+
+        else{
+
+            Email.setTag("Success");
         }
     }
 }
