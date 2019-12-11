@@ -28,4 +28,8 @@ public class EmployeeVehicle {
     {
         return plate;
     }
+    public void setPlate(String plate)
+    {
+        this.plate = plate;
+    }
 }
