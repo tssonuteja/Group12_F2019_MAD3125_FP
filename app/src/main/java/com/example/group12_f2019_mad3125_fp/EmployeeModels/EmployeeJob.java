@@ -34,4 +34,9 @@ public class EmployeeJob {
         this.bonus = bonus;
     }
 
+    public String getSchool()
+    {
+        return school;
+    }
+
 }
