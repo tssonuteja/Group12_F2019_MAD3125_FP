@@ -35,7 +35,16 @@
             android:layout_height="wrap_content"
             android:id="@+id/tv_earning"
             android:text="Employee Earnings"
-            android:padding="20dp"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_vehicle"
+            android:text="Vehicle"
+            android:padding="10dp"
             android:textSize="18sp"
             android:textColor="@color/colorPrimaryDark"/>
 
