@@ -180,4 +180,9 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
         fragmentTransaction.commitAllowingStateLoss();
     }
 
+    @Override
+    public void onOpenTab(int position) {
+        openFragment(position);
+    }
+
 }
