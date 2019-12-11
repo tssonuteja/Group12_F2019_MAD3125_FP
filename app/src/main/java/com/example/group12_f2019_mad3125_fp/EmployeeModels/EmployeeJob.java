@@ -18,4 +18,8 @@ public class EmployeeJob {
         this.jobType = jobType;
     }
 
+    public double getSalary(){
+        return salary;
+    }
+
 }
