@@ -52,4 +52,9 @@ public class EmployeeJob {
         this.rate = rate;
     }
 
+    public double getHours()
+    {
+        return hours;
+    }
+
 }
