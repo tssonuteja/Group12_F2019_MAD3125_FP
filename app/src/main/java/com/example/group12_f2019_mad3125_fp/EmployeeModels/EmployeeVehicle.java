@@ -5,4 +5,9 @@ public class EmployeeVehicle {
     private String isA;
     private String make;
     private String plate;
+
+    public String getIsA()
+    {
+        return isA;
+    }
 }
