@@ -10,6 +10,8 @@ import com.example.group12_f2019_mad3125_fp.EmployeeModels.Employee;
 import com.example.group12_f2019_mad3125_fp.EmployeeModels.EmployeeVehicle;
 import com.example.group12_f2019_mad3125_fp.R;
 
+import java.util.Calendar;
+
 import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.employeeList;
 
 public class PayrollDetails extends AppCompatActivity {
@@ -42,7 +44,11 @@ public class PayrollDetails extends AppCompatActivity {
         } else {
             tv_vehicle.setText(vehicle.getMake()+" "+vehicle.getIsA()+" : "+vehicle.getPlate());
         }
+    }
 
-
+    private int calculateAge(){
+        Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+        return year - employee.getAge();
     }
 }
