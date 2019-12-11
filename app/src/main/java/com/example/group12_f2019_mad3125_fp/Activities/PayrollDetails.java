@@ -89,11 +89,14 @@ public class PayrollDetails extends AppCompatActivity {
             default:
                 break;
         }
-
-
-
-
-
-
-
+        return earning;
+    }
 }
+
+
+
+
+
+
+
+
