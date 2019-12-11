@@ -83,4 +83,8 @@ public class EmployeeJob {
     {
         return partTimeType;
     }
+    public void setPartTimeType(String partTimeType)
+    {
+        this.partTimeType = partTimeType;
+    }
 }
