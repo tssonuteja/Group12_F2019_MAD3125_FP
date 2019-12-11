@@ -29,4 +29,9 @@ public class Employee {
         this.earning = earning;
     }
 
+    public EmployeeVehicle getVehicle(){
+        return vehicle;
+    }
+
+
 }
