@@ -24,11 +24,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_name"
-            android:text="Name (yr)"
+            android:text="Employee Name (yr)"
             android:padding="10dp"
             android:textSize="18sp"
             android:textColor="@color/colorPrimaryDark"
             android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_earning"
+            android:text="Employee Earnings"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
 
 
     </LinearLayout>
