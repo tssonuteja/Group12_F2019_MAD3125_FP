@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
     Preference preference;
 
     public static List<Employee> employeeList = new ArrayList<>();
+    public static final String FULL_TIME = "Full time", INTERN = "Intern", PART_TIME = "Part time",
+            CAR = "Car", MOTORCYCLE = "Motorcycle", COMMISSION_BASED = "Commission based part time", FIXED_BASED = "Fixed based part time";
 
 
     @Override
