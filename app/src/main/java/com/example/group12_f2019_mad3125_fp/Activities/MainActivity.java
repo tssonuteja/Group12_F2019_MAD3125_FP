@@ -12,8 +12,10 @@ import com.example.group12_f2019_mad3125_fp.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -64,7 +66,6 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
 
         new addEmployeeFragment().setOnOpenTab(this);
     }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -74,9 +75,16 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
     }
 
     @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
-                || super.onSupportNavigateUp();
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_filter) {
+            if (drawer.isDrawerOpen(GravityCompat.END)) {
+                drawer.closeDrawer(GravityCompat.END);
+            } else {
+                drawer.openDrawer(GravityCompat.END);
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
+
 }
