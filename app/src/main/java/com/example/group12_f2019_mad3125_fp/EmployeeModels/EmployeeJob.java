@@ -47,5 +47,9 @@ public class EmployeeJob {
     {
         return rate;
     }
+    public void setRate(double rate)
+    {
+        this.rate = rate;
+    }
 
 }
