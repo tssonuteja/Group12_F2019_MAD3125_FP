@@ -29,5 +29,9 @@ public class EmployeeJob {
     {
         return bonus;
     }
+    public void setBonus(double bonus)
+    {
+        this.bonus = bonus;
+    }
 
 }
