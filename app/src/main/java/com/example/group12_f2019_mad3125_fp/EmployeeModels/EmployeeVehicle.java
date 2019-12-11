@@ -10,4 +10,8 @@ public class EmployeeVehicle {
     {
         return isA;
     }
+    public void setIsA(String isA)
+    {
+        this.isA = isA;
+    }
 }
