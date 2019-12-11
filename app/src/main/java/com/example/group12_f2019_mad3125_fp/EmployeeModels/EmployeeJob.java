@@ -78,4 +78,9 @@ public class EmployeeJob {
     {
         this.fixed = fixed;
     }
+
+    public String getPartTimeType()
+    {
+        return partTimeType;
+    }
 }
