@@ -40,5 +40,8 @@ public class addEmployeeFragment extends Fragment {
         rb_part_time = root.findViewById(R.id.rb_part_time);
         rb_intern = root.findViewById(R.id.rb_intern);
         rb_full_time = root.findViewById(R.id.rb_full_time);
+        part_time_layout = root.findViewById(R.id.part_time_layout);
+        intern_layout = root.findViewById(R.id.intern_layout);
+        full_time_layout = root.findViewById(R.id.full_time_layout);
 
     }
