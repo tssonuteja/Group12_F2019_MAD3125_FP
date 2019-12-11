@@ -69,4 +69,9 @@ public class EmployeeJob {
     {
         this.commission = commission;
     }
+
+    public double getFixed()
+    {
+        return fixed;
+    }
 }
