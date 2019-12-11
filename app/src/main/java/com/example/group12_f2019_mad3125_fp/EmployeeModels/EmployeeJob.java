@@ -65,5 +65,8 @@ public class EmployeeJob {
     {
         return commission;
     }
-
+    public void setCommission(double commission)
+    {
+        this.commission = commission;
+    }
 }
