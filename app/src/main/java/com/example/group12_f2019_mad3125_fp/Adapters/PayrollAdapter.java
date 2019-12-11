@@ -1,6 +1,11 @@
 package com.example.group12_f2019_mad3125_fp.Adapters;
 
 import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
 
 import com.example.group12_f2019_mad3125_fp.EmployeeModels.Employee;
 import com.example.group12_f2019_mad3125_fp.Interfaces.OnPayrollClicked;
@@ -17,6 +22,13 @@ public class PayrollAdapter {
         this.context = context;
         this.employeeList = employeeList;
         this.onPayrollClicked = onPayrollClicked;
+    }
+
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.single_row_payrol_list, parent, false);
+        return new ViewHolder(view);
     }
 
 }
