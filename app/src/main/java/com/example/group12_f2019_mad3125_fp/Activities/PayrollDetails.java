@@ -80,11 +80,20 @@ public class PayrollDetails extends AppCompatActivity {
                     earning = job.getCommission()+(job.getRate()*job.getHours());
                 }
                 break;
-
-
-
-
+            case INTERN:
+                tv_job_one.setText("School : "+job.getSchool());
+                tv_job_two.setVisibility(View.GONE);
+                tv_job_three.setVisibility(View.GONE);
+                tv_job_type.setText(INTERN);
+                break;
+            default:
+                break;
         }
+
+
+
+
+
 
 
 }
