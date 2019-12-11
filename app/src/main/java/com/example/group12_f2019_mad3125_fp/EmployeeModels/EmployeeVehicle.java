@@ -19,4 +19,8 @@ public class EmployeeVehicle {
     {
         return make;
     }
+    public void setMake(String make)
+    {
+        this.make = make;
+    }
 }
