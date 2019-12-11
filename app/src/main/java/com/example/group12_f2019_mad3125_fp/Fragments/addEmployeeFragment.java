@@ -91,6 +91,21 @@ public class addEmployeeFragment extends Fragment {
             }
         });
 
+        rb_intern.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    intern_layout.setVisibility(View.VISIBLE);
+                    etCommission.setVisibility(View.GONE);
+                    etFixed.setVisibility(View.GONE);
+                } else {
+                    intern_layout.setVisibility(View.GONE);
+                    etCommission.setVisibility(View.GONE);
+                    etFixed.setVisibility(View.GONE);
+                }
+            }
+        });
+
 
 
 
