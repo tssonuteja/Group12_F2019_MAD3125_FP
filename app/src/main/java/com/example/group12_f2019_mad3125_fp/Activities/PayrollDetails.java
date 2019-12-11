@@ -12,6 +12,11 @@ import com.example.group12_f2019_mad3125_fp.R;
 
 import java.util.Calendar;
 
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.COMMISSION_BASED;
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.FIXED_BASED;
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.FULL_TIME;
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.INTERN;
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.PART_TIME;
 import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.employeeList;
 
 public class PayrollDetails extends AppCompatActivity {
