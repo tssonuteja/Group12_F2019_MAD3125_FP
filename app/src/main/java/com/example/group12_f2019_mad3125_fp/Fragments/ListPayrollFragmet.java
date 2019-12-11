@@ -1,18 +1,25 @@
 package com.example.group12_f2019_mad3125_fp.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.group12_f2019_mad3125_fp.Activities.PayrollDetails;
+import com.example.group12_f2019_mad3125_fp.Adapters.PayrollAdapter;
+import com.example.group12_f2019_mad3125_fp.Interfaces.OnPayrollClicked;
 import com.example.group12_f2019_mad3125_fp.R;
+
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.employeeList;
 
 
 public class ListPayrollFragmet extends Fragment {
@@ -26,3 +33,21 @@ public class ListPayrollFragmet extends Fragment {
         setAdapter();
         return root;
     }
+
+    private void setAdapter() {
+
+        PayrollAdapter adapter = new PayrollAdapter(getActivity(), employeeList, new OnPayrollClicked() {
+            @Override
+            public void onPayrollClicked(int position) {
+                Intent intent = new Intent(getActivity(), PayrollDetails.class);
+                intent.putExtra("position", position);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayoutManager manager = new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false);
+        payroll_list.setLayoutManager(manager);
+        payroll_list.setAdapter(adapter);
+    }
+
+}
