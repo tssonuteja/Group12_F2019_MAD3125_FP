@@ -10,4 +10,10 @@ import android.content.SharedPreferences;
         public Preference(Context context){
             preferences = context.getSharedPreferences("myPreference", Context.MODE_PRIVATE);
         }
+
+        public void put(String key, String value){
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString(key, value);
+            editor.apply();
+        }
 }
