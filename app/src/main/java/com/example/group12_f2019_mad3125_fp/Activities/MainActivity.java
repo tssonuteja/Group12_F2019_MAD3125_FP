@@ -2,6 +2,7 @@ package com.example.group12_f2019_mad3125_fp.Activities;
 
 import android.os.Bundle;
 
+import com.example.group12_f2019_mad3125_fp.EmployeeModels.Employee;
 import com.example.group12_f2019_mad3125_fp.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -22,9 +23,14 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+
+    public static List<Employee> employeeList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
