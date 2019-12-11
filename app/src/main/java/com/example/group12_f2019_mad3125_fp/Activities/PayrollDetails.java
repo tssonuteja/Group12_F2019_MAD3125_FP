@@ -25,5 +25,10 @@ public class PayrollDetails extends AppCompatActivity {
         tv_vehicle = findViewById(R.id.tv_vehicle);
         tv_earning = findViewById(R.id.tv_earning);
         tv_name = findViewById(R.id.tv_name);
+
+        int position = getIntent().getIntExtra("position", 0);
+        employee = employeeList.get(position);
+
+        
     }
 }
