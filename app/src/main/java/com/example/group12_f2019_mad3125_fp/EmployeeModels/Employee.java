@@ -8,4 +8,8 @@ public class Employee {
     private EmployeeVehicle vehicle;
     private EmployeeJob job;
 
+    public String getName(){
+        return name;
+    }
+
 }
