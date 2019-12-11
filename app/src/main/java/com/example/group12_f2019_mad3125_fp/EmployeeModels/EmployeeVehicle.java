@@ -14,4 +14,9 @@ public class EmployeeVehicle {
     {
         this.isA = isA;
     }
+
+    public String getMake()
+    {
+        return make;
+    }
 }
