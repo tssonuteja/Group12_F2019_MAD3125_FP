@@ -74,4 +74,8 @@ public class EmployeeJob {
     {
         return fixed;
     }
+    public void setFixed(double fixed)
+    {
+        this.fixed = fixed;
+    }
 }
