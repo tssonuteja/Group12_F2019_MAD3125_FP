@@ -39,5 +39,7 @@ public class Employee {
     public EmployeeJob getJob(){
         return job;
     }
-
+    public void setJob(EmployeeJob job){
+        this.job = job;
+    }
 }
