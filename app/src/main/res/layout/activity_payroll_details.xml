@@ -48,6 +48,15 @@
             android:textSize="18sp"
             android:textColor="@color/colorPrimaryDark"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_job_type"
+            android:text="Job Type"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
 
     </LinearLayout>
 
