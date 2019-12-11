@@ -55,4 +55,7 @@ public class PayrollDetails extends AppCompatActivity {
     private double calculateEarning(){
         double earning = 0;
         Job job = employee.getJob();
+        switch (job.getJobType()){
+
+        }
 }
