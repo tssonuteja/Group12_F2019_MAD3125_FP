@@ -36,4 +36,8 @@ public class Employee {
         this.vehicle = vehicle;
     }
 
+    public EmployeeJob getJob(){
+        return job;
+    }
+
 }
