@@ -16,7 +16,7 @@
             android:textSize="14sp"
             android:padding="10dp"
             android:layout_margin="5dp"
-            android:background="@color/cardview_light_background"
+            android:background="@color/white"
             android:inputType="textPersonName"/>
         <EditText
             android:layout_width="match_parent"
@@ -26,15 +26,25 @@
             android:textSize="14sp"
             android:padding="10dp"
             android:layout_margin="5dp"
-            android:background="@color/cardview_light_background"
+            android:background="@color/white"
             android:inputType="number"/>
 
+        <!--<EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_earning"
+            android:hint="Earning"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:inputType="numberDecimal"/>-->
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/has_vehicle_check"
             android:text="Has vehicle"
-            android:background="@color/cardview_light_background"
+            android:background="@color/white"
             android:padding="10dp"
             android:layout_margin="5dp"
             android:textSize="14sp"/>
@@ -52,7 +62,7 @@
                 android:id="@+id/rb_car"
                 android:text="Car"
                 android:padding="10dp"
-                android:background="@color/cardview_light_background"/>
+                android:background="@color/white"/>
             <RelativeLayout
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
@@ -64,7 +74,7 @@
                 android:id="@+id/rb_bike"
                 android:text="Motorcycle"
                 android:padding="10dp"
-                android:background="@color/cardview_light_background"/>
+                android:background="@color/white"/>
         </RadioGroup>
 
         <LinearLayout
@@ -83,7 +93,7 @@
                 android:textSize="14sp"
                 android:padding="10dp"
                 android:layout_margin="5dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"
                 android:inputType="textPersonName"/>
             <EditText
                 android:layout_width="match_parent"
@@ -93,7 +103,7 @@
                 android:textSize="14sp"
                 android:padding="10dp"
                 android:layout_margin="5dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"
                 android:inputType="text"/>
         </LinearLayout>
 
@@ -101,11 +111,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Job Details"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/black"
             android:textSize="14sp"
             android:padding="10dp"
             android:layout_margin="5dp"
-            android:background="@color/cardview_light_background"/>
+            android:background="@color/white"/>
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -118,7 +128,7 @@
                 android:id="@+id/rb_full_time"
                 android:text="Full Time"
                 android:padding="10dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"
                 android:layout_margin="2dp"/>
 
             <RadioButton
@@ -127,7 +137,7 @@
                 android:id="@+id/rb_intern"
                 android:text="Intern"
                 android:padding="10dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"
                 android:layout_margin="2dp"/>
             <RadioButton
                 android:layout_width="match_parent"
@@ -135,7 +145,7 @@
                 android:id="@+id/rb_part_time"
                 android:text="Part Time"
                 android:padding="10dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"
                 android:layout_margin="2dp"/>
         </RadioGroup>
         <RadioGroup
@@ -154,7 +164,7 @@
                 android:text="Commission Based Part Time"
                 android:padding="10dp"
                 android:layout_margin="5dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"/>
 
             <RadioButton
                 android:layout_width="match_parent"
@@ -163,7 +173,7 @@
                 android:text="Fixed Based Part Time"
                 android:padding="10dp"
                 android:layout_margin="5dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"/>
         </RadioGroup>
 
         <LinearLayout
@@ -182,7 +192,7 @@
                 android:textSize="14sp"
                 android:padding="10dp"
                 android:layout_margin="5dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"
                 android:inputType="numberDecimal"/>
             <EditText
                 android:layout_width="match_parent"
@@ -192,7 +202,7 @@
                 android:textSize="14sp"
                 android:padding="10dp"
                 android:layout_margin="5dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"
                 android:inputType="numberDecimal"/>
         </LinearLayout>
         <LinearLayout
@@ -211,7 +221,7 @@
                 android:textSize="14sp"
                 android:padding="10dp"
                 android:layout_margin="5dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"
                 android:inputType="text"/>
         </LinearLayout>
         <LinearLayout
@@ -230,7 +240,7 @@
                 android:textSize="14sp"
                 android:padding="10dp"
                 android:layout_margin="5dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"
                 android:inputType="numberDecimal"/>
             <EditText
                 android:layout_width="match_parent"
@@ -240,7 +250,7 @@
                 android:textSize="14sp"
                 android:padding="10dp"
                 android:layout_margin="5dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"
                 android:inputType="numberDecimal"/>
             <EditText
                 android:layout_width="match_parent"
@@ -250,7 +260,7 @@
                 android:textSize="14sp"
                 android:padding="10dp"
                 android:layout_margin="5dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:visibility="gone"
@@ -265,7 +275,7 @@
                 android:layout_margin="5dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/cardview_light_background"
+                android:background="@color/white"
                 android:visibility="gone"
                 android:inputType="numberDecimal"/>
         </LinearLayout>
@@ -273,7 +283,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_save"
-            android:background="#DD95A6EB"
+            android:background="#2196F3"
             android:text="Save"
             android:textColor="#fff"
             android:layout_gravity="center_horizontal"
