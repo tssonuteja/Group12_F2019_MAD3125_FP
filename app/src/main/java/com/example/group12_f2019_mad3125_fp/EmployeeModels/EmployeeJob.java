@@ -43,4 +43,9 @@ public class EmployeeJob {
         this.school = school;
     }
 
+    public double getRate()
+    {
+        return rate;
+    }
+
 }
