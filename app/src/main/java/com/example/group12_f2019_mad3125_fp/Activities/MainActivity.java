@@ -13,8 +13,6 @@ import com.example.group12_f2019_mad3125_fp.Fragments.addEmployeeFragment;
 import com.example.group12_f2019_mad3125_fp.Interfaces.OpenTab;
 import com.example.group12_f2019_mad3125_fp.Preference;
 import com.example.group12_f2019_mad3125_fp.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import android.view.MenuItem;
 import android.view.View;
@@ -23,10 +21,6 @@ import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -164,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
         Fragment fragment;
         switch (position){
             case 1:
-                fragment = new ListPayrollFragmet();
+                fragment = new ListPayrollFragment();
                 break;
             case 2:
                 fragment = new addEmployeeFragment();
