@@ -22,4 +22,20 @@ import android.content.SharedPreferences;
             editor.putBoolean(key, value);
             editor.apply();
         }
-}
+
+
+        public boolean getBoolean(String key){
+            return preferences.getBoolean(key, false);
+        }
+
+        public String getString(String key){
+            return preferences.getString(key, "");
+        }
+
+        public void clearData(String key){
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.remove(key);
+            editor.apply();
+        }
+    }
+
