@@ -19,13 +19,17 @@ import android.widget.RadioGroup;
 
 import com.example.group12_f2019_mad3125_fp.EmployeeModels.Employee;
 import com.example.group12_f2019_mad3125_fp.EmployeeModels.EmployeeJob;
+import com.example.group12_f2019_mad3125_fp.EmployeeModels.EmployeeVehicle;
 import com.example.group12_f2019_mad3125_fp.R;
 
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.CAR;
 import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.COMMISSION_BASED;
 import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.FIXED_BASED;
 import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.FULL_TIME;
 import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.INTERN;
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.MOTORCYCLE;
 import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.PART_TIME;
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.employeeList;
 
 
 public class addEmployeeFragment extends Fragment {
@@ -190,6 +194,23 @@ public class addEmployeeFragment extends Fragment {
 
         employee.setName(etName.getText().toString());
         employee.setAge(Integer.parseInt(tvDob.getText().toString()));
+
+        EmployeeVehicle vehicle = new EmployeeVehicle();
+        if (has_vehicle_check.isChecked()){
+            if (rbCar.isChecked()){
+                vehicle.setIsA(CAR);
+            } else {
+                vehicle.setIsA(MOTORCYCLE);
+            }
+            vehicle.setMake(etMake.getText().toString());
+            vehicle.setPlate(etPlate.getText().toString());
+        }
+        employee.setVehicle(vehicle);
+
+        employeeList.add(employee);
+
+        openTab.onOpenTab(1);
+    }
 
 
 
