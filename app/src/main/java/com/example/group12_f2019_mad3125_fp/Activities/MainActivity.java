@@ -1,7 +1,8 @@
-package com.example.group12_f2019_mad3125_fp;
+package com.example.group12_f2019_mad3125_fp.Activities;
 
 import android.os.Bundle;
 
+import com.example.group12_f2019_mad3125_fp.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 

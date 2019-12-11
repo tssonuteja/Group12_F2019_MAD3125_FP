@@ -1,7 +1,5 @@
-package com.example.group12_f2019_mad3125_fp.ui.home;
+package com.example.group12_f2019_mad3125_fp.Fragments;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -27,6 +25,4 @@ public class HomeFragment extends Fragment {
         textView.setText(currentTime.toString());
         return root;
     }
-
-
 }

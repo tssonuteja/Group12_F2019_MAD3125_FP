@@ -1,4 +1,4 @@
-package com.example.group12_f2019_mad3125_fp;
+package com.example.group12_f2019_mad3125_fp.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.group12_f2019_mad3125_fp.R;
 
 import static android.text.TextUtils.isEmpty;
 
@@ -57,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void loginSuccess() {
 
-        preference.put("isLoggedIn", true);
+        //preference.put("isLoggedIn", true);
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
         finish();
