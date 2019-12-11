@@ -35,4 +35,10 @@ public class addEmployeeFragment extends Fragment {
 
         has_vehicle_check = root.findViewById(R.id.has_vehicle_check);
 
+        rb_commission_based = root.findViewById(R.id.rb_commission_based);
+        rb_fixed_based = root.findViewById(R.id.rb_fixed_based);
+        rb_part_time = root.findViewById(R.id.rb_part_time);
+        rb_intern = root.findViewById(R.id.rb_intern);
+        rb_full_time = root.findViewById(R.id.rb_full_time);
+
     }
