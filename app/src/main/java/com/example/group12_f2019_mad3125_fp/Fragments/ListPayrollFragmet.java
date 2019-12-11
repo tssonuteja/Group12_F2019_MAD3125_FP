@@ -22,7 +22,7 @@ import com.example.group12_f2019_mad3125_fp.R;
 import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.employeeList;
 
 
-public class ListPayrollFragmet extends Fragment {
+public class ListPayrollFragment extends Fragment {
 
     private RecyclerView payroll_list;
     public View onCreateView(@NonNull LayoutInflater inflater,
