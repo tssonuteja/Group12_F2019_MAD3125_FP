@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.group12_f2019_mad3125_fp.EmployeeModels.Employee;
+import com.example.group12_f2019_mad3125_fp.EmployeeModels.EmployeeVehicle;
 import com.example.group12_f2019_mad3125_fp.R;
+
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.employeeList;
 
 public class PayrollDetails extends AppCompatActivity {
 
@@ -28,6 +31,10 @@ public class PayrollDetails extends AppCompatActivity {
 
         int position = getIntent().getIntExtra("position", 0);
         employee = employeeList.get(position);
+
+        tv_name.setText(employee.getName()+" ("+calculateAge()+")");
+        tv_earning.setText("Earning : "+calculateEarning());
+        EmployeeVehicle vehicle = employee.getVehicle();
 
 
     }
