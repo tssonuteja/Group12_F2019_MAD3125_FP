@@ -31,4 +31,12 @@ public class PayrollAdapter {
         return new ViewHolder(view);
     }
 
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        Employee employee = employeeList.get(position);
+        holder.tvName.setText(employee.getName()+" ("+employee.getAge()+")");
+        holder.tvJob.setText(employee.getJob().getJobType());
+        holder.tvVehicle.setText(employee.getVehicle().getIsA()+" : "+employee.getVehicle().getPlate());
+    }
+
 }
