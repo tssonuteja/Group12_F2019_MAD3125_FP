@@ -51,4 +51,8 @@ public class PayrollDetails extends AppCompatActivity {
         int year = calendar.get(Calendar.YEAR);
         return year - employee.getAge();
     }
+
+    private double calculateEarning(){
+        double earning = 0;
+        Job job = employee.getJob();
 }
