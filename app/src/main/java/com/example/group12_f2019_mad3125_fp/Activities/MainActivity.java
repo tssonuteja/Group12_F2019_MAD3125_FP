@@ -3,12 +3,15 @@ package com.example.group12_f2019_mad3125_fp.Activities;
 import android.os.Bundle;
 
 import com.example.group12_f2019_mad3125_fp.EmployeeModels.Employee;
+import com.example.group12_f2019_mad3125_fp.Interfaces.OpenTab;
+import com.example.group12_f2019_mad3125_fp.Preference;
 import com.example.group12_f2019_mad3125_fp.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import android.view.View;
 
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -26,11 +29,13 @@ import android.view.Menu;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OpenTab {
 
-    private AppBarConfiguration mAppBarConfiguration;
+    DrawerLayout drawer;
+    NavigationView navigationView;
+    Fragment[] fragments;
+    Preference preference;
 
-    public static List<Employee> employeeList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
