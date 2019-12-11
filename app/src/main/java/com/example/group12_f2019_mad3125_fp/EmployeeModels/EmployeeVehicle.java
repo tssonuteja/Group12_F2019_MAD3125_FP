@@ -23,4 +23,9 @@ public class EmployeeVehicle {
     {
         this.make = make;
     }
+
+    public String getPlate()
+    {
+        return plate;
+    }
 }
