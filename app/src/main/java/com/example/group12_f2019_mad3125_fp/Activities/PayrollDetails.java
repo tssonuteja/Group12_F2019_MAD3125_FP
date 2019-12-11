@@ -29,6 +29,6 @@ public class PayrollDetails extends AppCompatActivity {
         int position = getIntent().getIntExtra("position", 0);
         employee = employeeList.get(position);
 
-        
+
     }
 }
