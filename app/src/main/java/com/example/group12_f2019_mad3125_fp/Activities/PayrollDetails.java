@@ -72,7 +72,14 @@ public class PayrollDetails extends AppCompatActivity {
                     tv_job_three.setText("Fixed amount : "+job.getFixed());
                     tv_job_type.setText(FIXED_BASED);
                     earning = job.getFixed()+(job.getRate()*job.getHours());
+                } else {
+                    tv_job_one.setText("Rate : "+job.getRate());
+                    tv_job_two.setText("Hours worked : "+job.getHours());
+                    tv_job_three.setText("Commission : "+job.getCommission());
+                    tv_job_type.setText(COMMISSION_BASED);
+                    earning = job.getCommission()+(job.getRate()*job.getHours());
                 }
+                break;
 
 
 
