@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
     Fragment[] fragments;
     Preference preference;
 
+    public static List<Employee> employeeList = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
