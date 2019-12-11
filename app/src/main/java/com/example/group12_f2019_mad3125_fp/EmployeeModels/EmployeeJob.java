@@ -56,5 +56,9 @@ public class EmployeeJob {
     {
         return hours;
     }
+    public void setHours(double hours)
+    {
+        this.hours = hours;
+    }
 
 }
