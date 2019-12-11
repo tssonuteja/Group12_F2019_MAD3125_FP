@@ -25,5 +25,8 @@ public class Employee {
     public String getEarning(){
         return earning;
     }
-    
+    public void setEarning(String earning){
+        this.earning = earning;
+    }
+
 }
