@@ -31,10 +31,11 @@ public class LoginActivity extends AppCompatActivity {
 
         preference = new Preference(this);
 
-        Email = (EditText) findViewById(R.id.txt_email);
-        Password = (EditText) findViewById(R.id.txt_password);
-        Login = (Button) findViewById(R.id.btn_login);
+        username = "user@employee.com";
+        password = "s3cr3t";
 
+        Email = findViewById(R.id.txt_email);
+        Password = findViewById(R.id.txt_password);
     }
 
     public void onLoginClick(View view){
@@ -58,8 +59,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginSuccess() {
-
-        //preference.put("isLoggedIn", true);
+        
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
         finish();
