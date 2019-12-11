@@ -134,10 +134,23 @@ public class addEmployeeFragment extends Fragment {
             }
         });
 
+        rb_fixed_based.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b){
+                    etFixed.setVisibility(View.VISIBLE);
+                } else {
+                    etFixed.setVisibility(View.GONE);
+                }
+            }
+        });
 
+        root.findViewById(R.id.btn_save).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onSaveClicked();
+            }
+        });
 
-
-
-
-
+        return root;
     }
