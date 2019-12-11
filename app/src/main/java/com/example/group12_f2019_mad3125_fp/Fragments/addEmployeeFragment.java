@@ -20,6 +20,7 @@ import android.widget.RadioGroup;
 import com.example.group12_f2019_mad3125_fp.EmployeeModels.Employee;
 import com.example.group12_f2019_mad3125_fp.EmployeeModels.EmployeeJob;
 import com.example.group12_f2019_mad3125_fp.EmployeeModels.EmployeeVehicle;
+import com.example.group12_f2019_mad3125_fp.Interfaces.OpenTab;
 import com.example.group12_f2019_mad3125_fp.R;
 
 import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.CAR;
@@ -211,6 +212,14 @@ public class addEmployeeFragment extends Fragment {
 
         openTab.onOpenTab(1);
     }
+
+    private static OpenTab openTab;
+
+    public void setOnOpenTab(OpenTab openTab)
+    {
+        addEmployeeFragment.openTab = openTab;
+    }
+}
 
 
 
