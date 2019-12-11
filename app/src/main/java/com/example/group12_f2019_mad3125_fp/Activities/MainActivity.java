@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 import com.example.group12_f2019_mad3125_fp.EmployeeModels.Employee;
 import com.example.group12_f2019_mad3125_fp.Fragments.HomeFragment;
-import com.example.group12_f2019_mad3125_fp.Fragments.ListPayrollFragmet;
+import com.example.group12_f2019_mad3125_fp.Fragments.ListPayrollFragment;
 import com.example.group12_f2019_mad3125_fp.Fragments.addEmployeeFragment;
 import com.example.group12_f2019_mad3125_fp.Interfaces.OpenTab;
 import com.example.group12_f2019_mad3125_fp.Preference;
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
 
         setUpNavigationView();
 
-        fragments = new Fragment[]{new HomeFragment(), new addEmployeeFragment(), new ListPayrollFragmet()};
+        fragments = new Fragment[]{new HomeFragment(), new addEmployeeFragment(), new ListPayrollFragment()};
 
         openFragment(0);
 
