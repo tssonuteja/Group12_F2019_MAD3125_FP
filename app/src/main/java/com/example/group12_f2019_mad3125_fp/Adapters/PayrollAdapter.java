@@ -12,4 +12,11 @@ public class PayrollAdapter {
     private Context context;
     private List<Employee> employeeList;
     private OnPayrollClicked onPayrollClicked;
+
+    public PayrollAdapter(Context context, List<Employee> employeeList, OnPayrollClicked onPayrollClicked) {
+        this.context = context;
+        this.employeeList = employeeList;
+        this.onPayrollClicked = onPayrollClicked;
+    }
+
 }
