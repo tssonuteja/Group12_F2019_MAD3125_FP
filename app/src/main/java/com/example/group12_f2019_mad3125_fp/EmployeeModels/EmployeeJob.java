@@ -61,4 +61,9 @@ public class EmployeeJob {
         this.hours = hours;
     }
 
+    public double getCommission()
+    {
+        return commission;
+    }
+
 }
