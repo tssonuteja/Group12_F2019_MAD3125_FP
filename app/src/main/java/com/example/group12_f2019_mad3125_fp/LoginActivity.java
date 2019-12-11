@@ -5,9 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.Preference;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import static android.text.TextUtils.isEmpty;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -23,57 +27,33 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        preference = new Preference(this);
+
         Email = (EditText) findViewById(R.id.txt_email);
         Password = (EditText) findViewById(R.id.txt_password);
         Login = (Button) findViewById(R.id.btn_login);
 
-        Login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+    }
 
-                validate(Email.getText().toString(), Password.getText().toString());
-
+    public void onLoginClick(View view){
+        String sEmail = Email.getText().toString();
+        String sPswd = Password.getText().toString();
+        if (isEmpty(sEmail) || isEmpty(sPswd)){
+            Toast.makeText(this, "Fields cannot be empty", Toast.LENGTH_SHORT).show();
+        } else {
+            if (!Patterns.EMAIL_ADDRESS.matcher(sEmail).matches()){
+                Email.setError("Invalid email");
+            } else {
+                if (sEmail.equals(username) && sPswd.equals(password)){
+                    loginSuccess();
+                } else {
+                    Toast.makeText(this, "Invalid email/password", Toast.LENGTH_SHORT).show();
+                    Email.requestFocus();
+                }
             }
+        }
 
-        });
     }
 
-    private void validate(String userName, String userPassword){
 
-        if ((userName.equals("user@employee.com")) && (userPassword.equals("s3cr3t"))){
-
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-            startActivity(intent);
-            finish();
-
-        }
-
-        if(userName.isEmpty() && userPassword.equals("s3cr3t")){
-            Email.setError("EmailID is Empty");
-        }
-
-        else if(userName.equals("user@employee.com") && userPassword.isEmpty()){
-            Password.setError("Password is Empty");
-        }
-
-        else if(userName.equals("user@employee.com") && userPassword!="s3cr3t"){
-            Password.setError("Invalid Password");
-        }
-
-        else if(userName!="user@employee.com"&& userPassword.equals("s3cr3t")){
-            Email.setError("Invalid Password");
-        }
-
-        else if(userName!="user@employee.com" || userPassword!="s3cr3t"){
-
-            Email.setError("Invalid EmailID");
-            Password.setError("Invalid Password");
-        }
-
-        else{
-
-            Email.setTag("Success");
-        }
-    }
-}
 
