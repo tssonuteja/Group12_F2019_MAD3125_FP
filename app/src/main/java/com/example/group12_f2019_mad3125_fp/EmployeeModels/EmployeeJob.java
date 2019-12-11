@@ -10,4 +10,10 @@ public class EmployeeJob {
     private double hours;
     private double commission;
     private double fixed;
+
+    public String getJobType(){
+        return jobType;
+    }
+
+
 }
