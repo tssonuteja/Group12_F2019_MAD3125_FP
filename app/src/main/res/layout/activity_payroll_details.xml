@@ -26,7 +26,7 @@
             android:id="@+id/tv_name"
             android:text="Employee Name (yr)"
             android:padding="10dp"
-            android:textSize="18sp"
+            android:textSize="22sp"
             android:textColor="@color/colorPrimaryDark"
             android:gravity="center"/>
 
@@ -36,45 +36,59 @@
             android:id="@+id/tv_earning"
             android:text="Employee Earnings"
             android:padding="10dp"
-            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
             android:textColor="@color/colorPrimaryDark"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_vehicle"
-            android:text="Vehicle"
+            android:text="Employee Vehicle"
             android:padding="10dp"
-            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
             android:textColor="@color/colorPrimaryDark"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_job_type"
-            android:text="Job Type"
+            android:text="Employee Job Type"
             android:padding="10dp"
-            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
             android:textColor="@color/colorPrimaryDark"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Job1"
+            android:text="Employee Job 1"
             android:id="@+id/tv_job_one"
             android:padding="10dp"
-            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
             android:textColor="@color/colorPrimaryDark"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_job_two"
-            android:text="Job2"
+            android:text="Employee Job 2"
             android:padding="10dp"
-            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
             android:textColor="@color/colorPrimaryDark"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_job_three"
+            android:text="Employee Job 3"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"/>
 
     </LinearLayout>
 
