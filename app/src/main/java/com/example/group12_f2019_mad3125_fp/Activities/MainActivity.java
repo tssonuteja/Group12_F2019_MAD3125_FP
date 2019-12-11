@@ -22,6 +22,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -157,6 +158,26 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
 
         dialog.show();
 
+    }
+
+    private void openFragment(int position){
+        Fragment fragment;
+        switch (position){
+            case 1:
+                fragment = new ListPayrollFragmet();
+                break;
+            case 2:
+                fragment = new addEmployeeFragment();
+                break;
+            default:
+                fragment = new HomeFragment();
+                break;
+        }
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
+                android.R.anim.fade_out);
+        fragmentTransaction.replace(R.id.main_frame, fragment);
+        fragmentTransaction.commitAllowingStateLoss();
     }
 
 }
