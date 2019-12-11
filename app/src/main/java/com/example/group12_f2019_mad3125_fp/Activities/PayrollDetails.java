@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.group12_f2019_mad3125_fp.EmployeeModels.Employee;
+import com.example.group12_f2019_mad3125_fp.EmployeeModels.EmployeeJob;
 import com.example.group12_f2019_mad3125_fp.EmployeeModels.EmployeeVehicle;
 import com.example.group12_f2019_mad3125_fp.R;
 
@@ -59,7 +60,7 @@ public class PayrollDetails extends AppCompatActivity {
 
     private double calculateEarning(){
         double earning = 0;
-        Job job = employee.getJob();
+        EmployeeJob job = employee.getJob();
         switch (job.getJobType()){
 
             case FULL_TIME:

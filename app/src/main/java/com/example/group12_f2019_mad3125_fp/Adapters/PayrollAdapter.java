@@ -15,7 +15,7 @@ import com.example.group12_f2019_mad3125_fp.R;
 
 import java.util.List;
 
-public class PayrollAdapter {
+public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHolder> {
 
     private Context context;
     private List<Employee> employeeList;
