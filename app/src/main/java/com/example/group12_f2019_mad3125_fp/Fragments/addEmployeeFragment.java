@@ -17,7 +17,15 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.example.group12_f2019_mad3125_fp.EmployeeModels.Employee;
+import com.example.group12_f2019_mad3125_fp.EmployeeModels.EmployeeJob;
 import com.example.group12_f2019_mad3125_fp.R;
+
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.COMMISSION_BASED;
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.FIXED_BASED;
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.FULL_TIME;
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.INTERN;
+import static com.example.group12_f2019_mad3125_fp.Activities.MainActivity.PART_TIME;
 
 
 public class addEmployeeFragment extends Fragment {
@@ -154,3 +162,51 @@ public class addEmployeeFragment extends Fragment {
 
         return root;
     }
+
+
+    private void onSaveClicked(){
+        Employee employee = new Employee();
+        EmployeeJob job = new EmployeeJob();
+        if (rb_full_time.isChecked()) {
+            job.setJobType(FULL_TIME);
+            job.setSalary(Double.parseDouble(etSalary.getText().toString().trim()));
+            job.setBonus(Double.parseDouble(etBonus.getText().toString().trim()));
+        } else if (rb_intern.isChecked()){
+            job.setJobType(INTERN);
+            job.setSchool(etSchool.getText().toString());
+        } else {
+            job.setJobType(PART_TIME);
+            if (rb_commission_based.isChecked()){
+                job.setPartTimeType(COMMISSION_BASED);
+                job.setCommission(Double.parseDouble(etCommission.getText().toString().trim()));
+            } else {
+                job.setPartTimeType(FIXED_BASED);
+                job.setFixed(Double.parseDouble(etFixed.getText().toString().trim()));
+            }
+            job.setRate(Double.parseDouble(etRate.getText().toString().trim()));
+            job.setHours(Double.parseDouble(etHours.getText().toString().trim()));
+        }
+        employee.setJob(job);
+
+        employee.setName(etName.getText().toString());
+        employee.setAge(Integer.parseInt(tvDob.getText().toString()));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
