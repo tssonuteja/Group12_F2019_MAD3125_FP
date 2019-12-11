@@ -4,15 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.Preference;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 public class LoginActivity extends AppCompatActivity {
 
+    private String username;
+    private String password;
     private EditText Email;
     private EditText Password;
     private Button Login;
+    Preference preference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
