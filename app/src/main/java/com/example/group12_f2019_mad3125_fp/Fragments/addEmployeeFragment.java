@@ -33,4 +33,6 @@ public class addEmployeeFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_add_employee, container, false);
 
+        has_vehicle_check = root.findViewById(R.id.has_vehicle_check);
+
     }
