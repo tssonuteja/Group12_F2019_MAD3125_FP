@@ -58,5 +58,6 @@ public class addEmployeeFragment extends Fragment {
         etFixed = root.findViewById(R.id.et_fixed_amount);
         etMake =  root.findViewById(R.id.et_make);
         etPlate = root.findViewById(R.id.et_plate);
+        tvDob = root.findViewById(R.id.tv_dob);
 
     }
