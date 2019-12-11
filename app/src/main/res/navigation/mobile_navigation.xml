@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_home"
+    tools:ignore="UnusedNavigation">
 
     <fragment
         android:id="@+id/nav_home"
@@ -21,6 +22,6 @@
         android:id="@+id/nav_list_payroll"
         android:name="com.example.group12_f2019_mad3125_fp.Fragments.ListPayrollFragment"
         android:label="@string/menu_list_payroll"
-        tools:layout="@layout/fragment_list_payroll" />
+        tools:layout="@layout/fragment_list_payroll_fragmet" />
 
 </navigation>
