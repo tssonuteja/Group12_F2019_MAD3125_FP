@@ -32,6 +32,8 @@ public class Employee {
     public EmployeeVehicle getVehicle(){
         return vehicle;
     }
-
+    public void setVehicle(EmployeeVehicle vehicle){
+        this.vehicle = vehicle;
+    }
 
 }
