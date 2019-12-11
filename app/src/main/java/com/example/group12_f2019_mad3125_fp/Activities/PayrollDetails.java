@@ -3,6 +3,7 @@ package com.example.group12_f2019_mad3125_fp.Activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.group12_f2019_mad3125_fp.EmployeeModels.Employee;
@@ -35,6 +36,12 @@ public class PayrollDetails extends AppCompatActivity {
         tv_name.setText(employee.getName()+" ("+calculateAge()+")");
         tv_earning.setText("Earning : "+calculateEarning());
         EmployeeVehicle vehicle = employee.getVehicle();
+
+        if (vehicle == null){
+            tv_vehicle.setVisibility(View.GONE);
+        } else {
+            tv_vehicle.setText(vehicle.getMake()+" "+vehicle.getIsA()+" : "+vehicle.getPlate());
+        }
 
 
     }
