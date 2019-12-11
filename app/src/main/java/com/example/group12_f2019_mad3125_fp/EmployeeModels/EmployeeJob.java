@@ -14,6 +14,8 @@ public class EmployeeJob {
     public String getJobType(){
         return jobType;
     }
-
+    public void setJobType(String jobType){
+        this.jobType = jobType;
+    }
 
 }
